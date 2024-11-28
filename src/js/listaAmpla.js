@@ -485,8 +485,8 @@ const candidatosAmpla = [
     "nome": "ALEX PEREIRA DA SILVA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0230598",
@@ -541,8 +541,8 @@ const candidatosAmpla = [
     "nome": "GABRIEL DE LIMA MACHADO",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0227677",

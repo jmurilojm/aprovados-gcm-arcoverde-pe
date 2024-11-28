@@ -30,6 +30,19 @@ header h2 {
   color: white;
 }
 
+section{
+  text-align: center;
+}
+
+button{
+  background: var(--cor-principal);
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 nav{
   text-align: center;
   background: var(--cor-principal);

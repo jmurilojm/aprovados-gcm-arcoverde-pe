@@ -76,9 +76,9 @@ const candidatosFeminino = [
     "matricula": "235461",
     "nome": "YNGRID CAMILE SILVA PEREIRA",
     "taf": true,
-    "psi": "aguardando",
-    "em": "aguardando",
-    "fic": "aguardando"
+    "psi": true,
+    "em": true,
+    "fic": true
   },
   {
     "matricula": "235672",
@@ -125,8 +125,8 @@ const candidatosFeminino = [
     "nome": "CARLYZE CRISTYANE DE OLIVEIRA SILVA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": false
   },
   {
     "matricula": "233331",

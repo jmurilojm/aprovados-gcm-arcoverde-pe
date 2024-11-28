@@ -1,4 +1,4 @@
-const horario = '18:26';
+const horario = '19:33';
 const data = '28/11/2024';
 const logo = 'src/imagens/logo.png';
 

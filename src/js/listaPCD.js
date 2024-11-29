@@ -19,10 +19,10 @@ const candidatosPCD = [
   {
     "matricula": "0224011",
     "nome": "FRANCIMARIO GONÇALVES DA SILVA",
-    "taf": "aguardando",
+    "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": false,
+    "em": true
   },
   {
     "matricula": "0217404",
@@ -52,9 +52,9 @@ const candidatosPCD = [
     "matricula": "0231949",
     "nome": "JOSÉ LADJANE MENDES E SILVA",
     "taf": true,
-    "psi": "aguardando",
-    "fic": "aguardando",
-    "em": "aguardando"
+    "psi": true,
+    "fic": false,
+    "em": true
   },
   {
     "matricula": "0223935",

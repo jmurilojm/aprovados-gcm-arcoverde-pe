@@ -149,16 +149,16 @@ const candidatosAmpla = [
     "nome": "ELIZANGELO ANTONIO DA SILVA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0229024",
     "nome": "LEANDRO GUSTAVO FERREIRA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0230699",
@@ -181,8 +181,8 @@ const candidatosAmpla = [
     "nome": "JOSE BRUNO CAVALCANTI PEREIRA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0219999",
@@ -245,8 +245,8 @@ const candidatosAmpla = [
     "nome": "BEATRIZ MAURÍCIO TORRES MACEDO",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": false,
+    "fic": true
 },
   {
     "matricula": "0228544",
@@ -285,8 +285,8 @@ const candidatosAmpla = [
     "nome": "MATEUS HENRIQUE DA SILVA",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0214075",
@@ -444,9 +444,9 @@ const candidatosAmpla = [
     "matricula": "0230648",
     "nome": "ROBERTO ANTONIO DOS SANTOS SILVA",
     "taf": true,
-    "psi": "aguardando",
-    "em": "aguardando",
-    "fic": "aguardando"
+    "psi": true,
+    "em": true,
+    "fic": true
 },
   {
     "matricula": "0217345",

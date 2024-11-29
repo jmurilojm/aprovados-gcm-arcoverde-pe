@@ -4,9 +4,9 @@ const candidatosPCD = [
     "matricula": "0230648",
     "nome": "ROBERTO ANTONIO DOS SANTOS SILVA",
     "taf": true,
-    "psi": "aguardando",
-    "em": "aguardando",
-    "fic": "aguardando"
+    "psi": true,
+    "em": true,
+    "fic": true
   },
   {
     "matricula": "0234943",

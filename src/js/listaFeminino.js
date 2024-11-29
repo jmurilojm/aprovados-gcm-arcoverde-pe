@@ -21,8 +21,8 @@ const candidatosFeminino = [
     "nome": "BEATRIZ MAURÍCIO TORRES MACEDO",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "em": false,
+    "fic": true
   },
   {
     "matricula": "224398",
@@ -66,11 +66,11 @@ const candidatosFeminino = [
   },
   {
     "matricula": "213677",
-    "nome": "ANDREIA CAVALCANTI GOMES",
+    "nome": "ANDRÉIA CAVALCANTI GOMES",
     "taf": true,
     "psi": true,
-    "em": "aguardando",
-    "fic": "aguardando"
+    "fic": false,
+    "em": true
   },
   {
     "matricula": "235461",

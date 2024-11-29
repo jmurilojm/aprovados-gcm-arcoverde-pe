@@ -29,8 +29,8 @@ const candidatosAmpla = [
     "nome": "JOALDO RODRIGUES DE SANTANA JUNIOR",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": true
   },
   {
     "matricula": "0219382",
@@ -165,8 +165,8 @@ const candidatosAmpla = [
     "nome": "JOSÉ WALISSON DE OLIVEIRA TORRES",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": false
 },
   {
     "matricula": "0220601",
@@ -325,8 +325,8 @@ const candidatosAmpla = [
     "nome": "EDER DA ROCHA",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": false
 },
   {
     "matricula": "0232075",
@@ -469,8 +469,8 @@ const candidatosAmpla = [
     "nome": "ANA KAROLINE FRAGA NUNES",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": true
 },
   {
     "matricula": "0225072",
@@ -635,10 +635,10 @@ const candidatosAmpla = [
   {
     "matricula": "0224011",
     "nome": "FRANCIMARIO GONÇALVES DA SILVA",
-    "taf": "aguardando",
+    "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": false,
+    "em": true
 },
   {
     "matricula": "0229605",

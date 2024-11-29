@@ -221,8 +221,8 @@ const candidatosAmpla = [
     "nome": "EMANOEL FÁBIO ALVES LIBERATO",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": true
 },
   {
     "matricula": "0232145",

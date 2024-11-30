@@ -119,6 +119,10 @@ footer a {
   color: white;
   padding: 0 10px;
 }
+.aguardando{
+  background-color: lightgray;
+  color: gray;
+}
 
 @media screen and (min-width: 720px) {
 

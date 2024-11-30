@@ -23,12 +23,21 @@ candidatosAmpla.forEach((c, i) => {
 });
 // listar na tela os candidatosAptos e o total;
 candidatosAptosAmpla.forEach((c, i) => {
-  document.querySelector("#listagemAmpla").innerHTML += `<tr>
+  if (c.matricula === '-------') {
+    document.querySelector("#listagemAmpla").innerHTML += `<tr class='aguardando'>
+            <td class="center">${i+1}º</td>
+            <td class="center">${c.matricula}</td>
+            <td class="capitalize center">${c.nome.toLowerCase()}</td>
+            <td class="center">${c.classificacao}º</td>
+          </tr>`;
+  } else {
+    document.querySelector("#listagemAmpla").innerHTML += `<tr>
         <td class="center">${i+1}º</td>
         <td class="center">${c.matricula}</td>
         <td class="capitalize center">${c.nome.toLowerCase()}</td>
         <td class="center">${c.classificacao}º</td>
-      </tr>`
+      </tr>`;
+  }
 })
 
 
@@ -48,12 +57,21 @@ candidatosFeminino.forEach((c, i) => {
 });
 // listar na tela os candidatosAptos e o total;
 candidatosAptosFeminino.forEach((c, i) => {
-  document.querySelector("#listagemFeminino").innerHTML += `<tr>
+  if (c.matricula === '-------') {
+    document.querySelector("#listagemFeminino").innerHTML += `<tr class='aguardando'>
+            <td class="center">${i+1}º</td>
+            <td class="center">${c.matricula}</td>
+            <td class="capitalize center">${c.nome.toLowerCase()}</td>
+            <td class="center">${c.classificacao}º</td>
+          </tr>`;
+  } else {
+    document.querySelector("#listagemFeminino").innerHTML += `<tr>
         <td class="center">${i+1}º</td>
         <td class="center">${c.matricula}</td>
         <td class="capitalize center">${c.nome.toLowerCase()}</td>
         <td class="center">${c.classificacao}º</td>
-      </tr>`
+      </tr>`;
+  }
 })
 
 
@@ -74,12 +92,21 @@ candidatosPCD.forEach((c, i) => {
 });
 // listar na tela os candidatosAptos e o total;
 candidatosAptosPCD.forEach((c, i) => {
-  document.querySelector("#listagemPCD").innerHTML += `<tr>
-        <td class="center">${i+1}º</td>
-        <td class="center">${c.matricula}</td>
-        <td class="capitalize center">${c.nome.toLowerCase()}</td>
-        <td class="center">${c.classificacao}º</td>
-      </tr>`
+  if (c.matricula === '-------') {
+        document.querySelector("#listagemPCD").innerHTML += `<tr class='aguardando'>
+                  <td class="center">${i+1}º</td>
+                  <td class="center">${c.matricula}</td>
+                  <td class="capitalize center">${c.nome.toLowerCase()}</td>
+                  <td class="center">${c.classificacao}º</td>
+                </tr>`;
+      } else {
+        document.querySelector("#listagemPCD").innerHTML += `<tr>
+              <td class="center">${i+1}º</td>
+              <td class="center">${c.matricula}</td>
+              <td class="capitalize center">${c.nome.toLowerCase()}</td>
+              <td class="center">${c.classificacao}º</td>
+            </tr>`;
+      }
 })
 
 // fim;

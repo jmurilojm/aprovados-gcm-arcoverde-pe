@@ -125,8 +125,8 @@ const candidatosPCD = [
     "nome": "JEANDERSON DA SILVA CARVALHO",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": true
   },
   {
     "matricula": "0213453",

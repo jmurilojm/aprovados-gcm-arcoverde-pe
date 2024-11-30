@@ -1,4 +1,4 @@
-const horario = '09:07';
+const horario = '22:37';
 const data = '29/11/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 28.11.2024.pdf'

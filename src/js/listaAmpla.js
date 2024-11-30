@@ -109,8 +109,8 @@ const candidatosAmpla = [
     "nome": "ROBSON AUGUSTO DE BRITO PEIXOTO",
     "taf": true,
     "psi": true,
-    "fic": "aguardando",
-    "em": "aguardando"
+    "fic": true,
+    "em": true
 },
   {
     "matricula": "0228683",

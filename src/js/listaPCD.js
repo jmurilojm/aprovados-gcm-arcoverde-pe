@@ -67,10 +67,10 @@ const candidatosPCD = [
   {
     "matricula": "0235803",
     "nome": "ISRAEL MARTINS SOUZA GOMES",
-    "taf": "aguardando",
-    "psi": "aguardando",
-    "fic": "aguardando",
-    "em": "aguardando"
+    "taf": true,
+    "psi": true,
+    "fic": true,
+    "em": false
   },
   {
     "matricula": "0228563",

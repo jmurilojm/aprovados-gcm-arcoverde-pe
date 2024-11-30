@@ -18,27 +18,12 @@ candidatosAmpla.forEach((c, i) => {
   } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
     candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
-    candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+    candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
   }
 });
 // listar na tela os candidatosAptos e o total;
-candidatosAptosAmpla.forEach((c, i) => {
-  if (c.matricula === '-------') {
-    document.querySelector("#listagemAmpla").innerHTML += `<tr class='aguardando'>
-            <td class="center">${i+1}º</td>
-            <td class="center">${c.matricula}</td>
-            <td class="capitalize center">${c.nome.toLowerCase()}</td>
-            <td class="center">${c.classificacao}º</td>
-          </tr>`;
-  } else {
-    document.querySelector("#listagemAmpla").innerHTML += `<tr>
-        <td class="center">${i+1}º</td>
-        <td class="center">${c.matricula}</td>
-        <td class="capitalize center">${c.nome.toLowerCase()}</td>
-        <td class="center">${c.classificacao}º</td>
-      </tr>`;
-  }
-})
+validarLista(candidatosAptosAmpla, '#listagemAmpla');
+
 
 
 // ========================================
@@ -52,27 +37,12 @@ candidatosFeminino.forEach((c, i) => {
   } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
     candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
-    candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+    candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
   }
 });
 // listar na tela os candidatosAptos e o total;
-candidatosAptosFeminino.forEach((c, i) => {
-  if (c.matricula === '-------') {
-    document.querySelector("#listagemFeminino").innerHTML += `<tr class='aguardando'>
-            <td class="center">${i+1}º</td>
-            <td class="center">${c.matricula}</td>
-            <td class="capitalize center">${c.nome.toLowerCase()}</td>
-            <td class="center">${c.classificacao}º</td>
-          </tr>`;
-  } else {
-    document.querySelector("#listagemFeminino").innerHTML += `<tr>
-        <td class="center">${i+1}º</td>
-        <td class="center">${c.matricula}</td>
-        <td class="capitalize center">${c.nome.toLowerCase()}</td>
-        <td class="center">${c.classificacao}º</td>
-      </tr>`;
-  }
-})
+validarLista(candidatosAptosFeminino, '#listagemFeminino');
+
 
 
 
@@ -87,26 +57,35 @@ candidatosPCD.forEach((c, i) => {
   } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
     candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
-    candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+    candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
   }
 });
 // listar na tela os candidatosAptos e o total;
-candidatosAptosPCD.forEach((c, i) => {
-  if (c.matricula === '-------') {
-        document.querySelector("#listagemPCD").innerHTML += `<tr class='aguardando'>
-                  <td class="center">${i+1}º</td>
-                  <td class="center">${c.matricula}</td>
-                  <td class="capitalize center">${c.nome.toLowerCase()}</td>
-                  <td class="center">${c.classificacao}º</td>
-                </tr>`;
-      } else {
-        document.querySelector("#listagemPCD").innerHTML += `<tr>
-              <td class="center">${i+1}º</td>
-              <td class="center">${c.matricula}</td>
-              <td class="capitalize center">${c.nome.toLowerCase()}</td>
-              <td class="center">${c.classificacao}º</td>
-            </tr>`;
-      }
-})
+validarLista(candidatosAptosPCD, '#listagemPCD');
 
-// fim;
+
+// funcoes;
+
+function validarLista(lista, idLista) {
+  lista.forEach((c, i) => {
+      if (c.matricula === '-------') {
+        document.querySelector(idLista).innerHTML += `<tr class='aguardando'>
+                    <td class="center">${i+1}º</td>
+                    <td class="center">${c.matricula}</td>
+                    <td class="capitalize center">${c.nome.toLowerCase()}</td>
+                    <td class="center">${c.classificacao}º</td>
+                  </tr>`;
+      } else {
+        document.querySelector(idLista).innerHTML += `<tr>
+                <td class="center">${i+1}º</td>
+                <td class="center">${c.matricula}</td>
+                <td class="capitalize center">${c.nome.toLowerCase()}</td>
+                <td class="center">${c.classificacao}º</td>
+              </tr>`;
+      }
+    });
+  }
+  
+  
+  
+  // fim;

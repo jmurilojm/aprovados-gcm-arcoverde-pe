@@ -13,6 +13,12 @@ candidatosAmpla.forEach((c, i) => {
   // verificar a situacao do candidado nas fases;
   if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
     candidatosAptosAmpla.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosAmpla.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   }
 });
 // listar na tela os candidatosAptos e o total;
@@ -26,12 +32,18 @@ candidatosAptosAmpla.forEach((c, i) => {
 })
 
 
-
+// ========================================
 // feminino;
 candidatosFeminino.forEach((c, i) => {
   // verificar a situacao do candidado nas fases;
   if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
     candidatosAptosFeminino.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosFeminino.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   }
 });
 // listar na tela os candidatosAptos e o total;
@@ -46,12 +58,18 @@ candidatosAptosFeminino.forEach((c, i) => {
 
 
 
-
+// ========================================
 // pcd;
 candidatosPCD.forEach((c, i) => {
   // verificar a situacao do candidado nas fases;
   if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
     candidatosAptosPCD.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
+  } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    candidatosAptosPCD.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
   }
 });
 // listar na tela os candidatosAptos e o total;

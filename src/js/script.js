@@ -2,16 +2,18 @@
 let candidatosValidadosAmpla = [];
 let candidatosValidadosFeminino = [];
 let candidatosValidadosPCD = [];
-
+let candidatosDesistentes = [];
 
 
 validarLista(candidatosAmpla, candidatosValidadosAmpla);
 validarLista(candidatosFeminino, candidatosValidadosFeminino);
 validarLista(candidatosPCD, candidatosValidadosPCD);
 
+
 exibirLista(candidatosValidadosAmpla, '#listagemAmpla');
 exibirLista(candidatosValidadosFeminino, '#listagemFeminino');
 exibirLista(candidatosValidadosPCD, '#listagemPCD');
+exibirLista(candidatosDesistentes, '#listagemDesistentes');
 
 
 
@@ -28,7 +30,9 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
     } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    } else if (c.taf === false && c.psi === false) {
+  candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+}
   });
 }
 
@@ -53,5 +57,7 @@ function exibirLista(lista, idLista) {
 }
 
 
+
+console.log(candidatosDesistentes)
 
 // fim;

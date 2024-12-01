@@ -1,23 +1,23 @@
 // lista de aptos;
-let candidatosAptosAmpla = [];
-let candidatosAptosFeminino = [];
-let candidatosAptosPCD = [];
+let candidatosValidadosAmpla = [];
+let candidatosValidadosFeminino = [];
+let candidatosValidadosPCD = [];
 
 
 
-validacao(candidatosAmpla, candidatosAptosAmpla);
-validacao(candidatosFeminino, candidatosAptosFeminino);
-validacao(candidatosPCD, candidatosAptosPCD);
+validarLista(candidatosAmpla, candidatosValidadosAmpla);
+validarLista(candidatosFeminino, candidatosValidadosFeminino);
+validarLista(candidatosPCD, candidatosValidadosPCD);
 
-exibirLista(candidatosAptosAmpla, '#listagemAmpla');
-exibirLista(candidatosAptosFeminino, '#listagemFeminino');
-exibirLista(candidatosAptosPCD, '#listagemPCD');
+exibirLista(candidatosValidadosAmpla, '#listagemAmpla');
+exibirLista(candidatosValidadosFeminino, '#listagemFeminino');
+exibirLista(candidatosValidadosPCD, '#listagemPCD');
 
 
 
 // funcoes;
 
-function validacao(listaDeCandidados, listaParaSalvarCandidatosValidados) {
+function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados) {
   listaDeCandidados.forEach((c, i) => {
     // verificar a situacao do candidado nas fases;
     if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {

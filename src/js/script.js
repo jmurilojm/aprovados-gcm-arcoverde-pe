@@ -58,6 +58,4 @@ function exibirLista(lista, idLista) {
 
 
 
-console.log(candidatosDesistentes)
-
 // fim;

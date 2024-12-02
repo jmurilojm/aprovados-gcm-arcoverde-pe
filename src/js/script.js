@@ -5,9 +5,9 @@ let candidatosValidadosPCD = [];
 let candidatosDesistentes = [];
 
 
-validarLista(candidatosAmpla, candidatosValidadosAmpla);
-validarLista(candidatosFeminino, candidatosValidadosFeminino);
-validarLista(candidatosPCD, candidatosValidadosPCD);
+validarLista(candidatosAmpla, candidatosValidadosAmpla, 'Ampla');
+validarLista(candidatosFeminino, candidatosValidadosFeminino, 'Feminino');
+validarLista(candidatosPCD, candidatosValidadosPCD, 'PCD');
 
 
 exibirLista(candidatosValidadosAmpla, '#listagemAmpla');
@@ -19,7 +19,7 @@ exibirLista(candidatosDesistentes, '#listagemDesistentes');
 
 // funcoes;
 
-function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados) {
+function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nomeLista) {
   listaDeCandidados.forEach((c, i) => {
     // verificar a situacao do candidado nas fases;
     if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
@@ -31,7 +31,8 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados) {
     } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     } else if (c.taf === false && c.psi === false) {
-  candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+      console.log(c.nome, nomeLista);
+      candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista })
 }
   });
 }
@@ -49,7 +50,7 @@ function exibirLista(lista, idLista) {
       document.querySelector(idLista).innerHTML += `<tr>
                 <td class="center">${i+1}º</td>
                 <td class="center">${c.matricula}</td>
-                <td class="capitalize center">${c.nome.toLowerCase()}</td>
+                <td class="capitalize center">${c.nome.toLowerCase()} - ${c.lista}</td>
                 <td class="center">${c.classificacao}º</td>
               </tr>`;
     }

@@ -22,22 +22,29 @@ exibirLista(candidatosDesistentes, '#listagemDesistentes');
 function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nomeLista) {
   listaDeCandidados.forEach((c, i) => {
     // verificar a situacao do candidado nas fases;
+
+    // para os candidatos apto em tudo;
     if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
-    } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    }
+    // para os nao temos informacao;
+    else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
-    } else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
-      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
-    } else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    }
+    // para os que informaram apenas dois;
+    else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    } else if (c.taf === false && c.psi === false) {
+    }
+    // para os que desistiram nos dois;
+    else if (c.taf === false && c.psi === false) {
       console.log(c.nome, nomeLista);
-      candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista })
-}
+      candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista });
+    }
   });
 }
 
 function exibirLista(lista, idLista) {
+  // com informacoes incompletas;
   lista.forEach((c, i) => {
     if (c.matricula === '-------') {
       document.querySelector(idLista).innerHTML += `<tr class='aguardando'>
@@ -46,7 +53,9 @@ function exibirLista(lista, idLista) {
                     <td class="capitalize center">${c.nome.toLowerCase()}</td>
                     <td class="center">${c.classificacao}º</td>
                   </tr>`;
-    } else {
+    }
+    // os aptos em tudo;
+    else {
       document.querySelector(idLista).innerHTML += `<tr>
                 <td class="center">${i+1}º</td>
                 <td class="center">${c.matricula}</td>

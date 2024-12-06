@@ -14,8 +14,8 @@ const candidatosAmpla = [
     "nome": "EVERLANDY VALERIO ALEXANDRE", 
     "taf": true, 
     "psi": true, 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "fic": true, 
+    "em": true, 
     "id": 2 
   },
   { 

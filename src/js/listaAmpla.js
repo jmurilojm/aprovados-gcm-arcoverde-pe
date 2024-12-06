@@ -418,9 +418,9 @@ const candidatosAmpla = [
     "matricula": "0231629", 
     "nome": "DANIEL BARBOSA DA SILVA", 
     "taf": true, 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 47 
   },
   { 

@@ -18,7 +18,7 @@ const candidatosFeminino = [
   { "matricula": "235233", "nome": "CARLYZE CRISTYANE DE OLIVEIRA SILVA", "taf": true, "psi": true, "fic": true, "em": false, "id": 16 },
   { "matricula": "233331", "nome": "KATHARINA MACIEL MARINHO SOARES", "taf": true, "psi": true, "fic": true, "em": true, "id": 17 },
   { "matricula": "231198", "nome": "GESSICA LAYANNY DE MORAIS NUNES", "taf": true, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 18 },
-  { "matricula": "235292", "nome": "NATALIA PEREIRA DA SILVA SOUZA", "taf": true, "psi": true, "fic": true, "em": false, "id": 19 },
+  { "matricula": "235292", "nome": "NATALIA PEREIRA DA SILVA SOUZA", "taf": true, "psi": true, "fic": true, "em": true, "id": 19 },
   { "matricula": "226853", "nome": "RUANE LARISSA DOS SANTOS MORAES", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 20 }];
   
   

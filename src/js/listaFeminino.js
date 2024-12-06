@@ -8,7 +8,7 @@ const candidatosFeminino = [
   { "matricula": "217046", "nome": "ANA KAROLINE FRAGA NUNES", "taf": true, "psi": true, "fic": true, "em": true, "id": 6 },
   { "matricula": "221221", "nome": "EDILAINE ARAUJO SILVA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 7 },
   { "matricula": "235627", "nome": "MARIA CÂNDIDA SOARES SILVA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 8 },
-  { "matricula": "213677", "nome": "ANDRÉIA CAVALCANTI GOMES", "taf": true, "psi": true, "fic": false, "em": true, "id": 9 },
+  { "matricula": "213677", "nome": "ANDRÉIA CAVALCANTI GOMES", "taf": true, "psi": true, "fic": true, "em": true, "id": 9 },
   { "matricula": "235461", "nome": "YNGRID CAMILE SILVA PEREIRA", "taf": true, "psi": true, "fic": true, "em": true, "id": 10 },
   { "matricula": "235672", "nome": "SAMYRYS ALVES NERES", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 11 },
   { "matricula": "217957", "nome": "JÉSSIKA KAROLLYNA DE SOUZA SILVA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 12 },

@@ -16,7 +16,6 @@ exibirLista(candidatosValidadosPCD, '#listagemPCD');
 exibirLista(candidatosDesistentes, '#listagemDesistentes');
 
 
-
 // funcoes;
 
 function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nomeLista) {
@@ -37,7 +36,6 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
     }
     // para os que desistiram nos dois;
     else if (c.taf === false && c.psi === false) {
-      console.log(c.nome, nomeLista);
       candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista });
     }
   });
@@ -56,12 +54,23 @@ function exibirLista(lista, idLista) {
     }
     // os aptos em tudo;
     else {
-      document.querySelector(idLista).innerHTML += `<tr>
+      // verificar se o candidato esta sendo da lista dos desistentes;
+      // se for, ele sera encaminhado para a lista ux com o nome de sua lista;
+      if (lista === candidatosDesistentes) {
+        document.querySelector(idLista).innerHTML += `<tr>
                 <td class="center">${i+1}º</td>
                 <td class="center">${c.matricula}</td>
-                <td class="capitalize center">${c.nome.toLowerCase()} - ${c.lista}</td>
+                <td class="capitalize center">${c.nome.toLowerCase()}  ‐ ${c.lista}</td>
                 <td class="center">${c.classificacao}º</td>
               </tr>`;
+      } else {
+        document.querySelector(idLista).innerHTML += `<tr>
+                <td class="center">${i+1}º</td>
+                <td class="center">${c.matricula}</td>
+                <td class="capitalize center">${c.nome.toLowerCase()} </td>
+                <td class="center">${c.classificacao}º</td>
+              </tr>`;
+      }
     }
   });
 }

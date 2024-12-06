@@ -73,7 +73,7 @@ const candidatosAmpla = [
   { "matricula": "0222166", "nome": "ÉRICO VERÍSSIMO MONTEIRO ALVES", "taf": true, "psi": true, "fic": true, "em": true, "id": 71 },
   { "matricula": "0234943", "nome": "YBN ALCANTARA FERRO DE MOURA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 72 },
   { "matricula": "0222831", "nome": "LUCAS DO NASCIMENTO SILVA", "taf": true, "psi": true, "fic": true, "em": true, "id": 73 },
-  { "matricula": "0229500", "nome": "EDSON FÁBIO DE SOUZA FILHO", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 74 },
+  { "matricula": "0229500", "nome": "EDSON FÁBIO DE SOUZA FILHO", "taf": true, "psi": true, "fic": true, "em": true, "id": 74 },
   { "matricula": "0232120", "nome": "EMMANUEL FELIPE FERREIRA", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 75 },
   { "matricula": "0231402", "nome": "JOÃO PEDRO CORDEIRO SIMÕES RODRIGUES", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 76 },
   { "matricula": "0219374", "nome": "JOSÉ MURILO LOPES FERREIRA", "taf": true, "psi": true, "fic": true, "em": true, "id": 77 },

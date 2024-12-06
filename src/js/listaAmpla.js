@@ -83,7 +83,7 @@ const candidatosAmpla = [
   { "matricula": "0229605", "nome": "SHARLES HUDSON RODRIGUES DA SILVA", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 81 },
   { "matricula": "0225170", "nome": "JOZILDO JOSÉ DOS SANTOS JUNIOR", "taf": true, "psi": true, "fic": true, "em": true, "id": 82 },
   { "matricula": "0233683", "nome": "IVALDO IGOR DA SILVA CRUZ", "taf": true, "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 83 },
-  { "matricula": "0216581", "nome": "PAULO ROBERTO ANTAO VERISSIMO", "taf": true, "psi": true, "fic": true, "em": false, "id": 84 },
+  { "matricula": "0216581", "nome": "PAULO ROBERTO ANTAO VERISSIMO", "taf": true, "psi": true, "fic": true, "em": true, "id": 84 },
   { "matricula": "0217404", "nome": "IAGO DE FARIAS ARAUJO", "taf": true, "psi": true, "fic": "aguardando", "em": "aguardando", "id": 85 },
   { "matricula": "0228657", "nome": "JOSE KEYDSON LUCENA MARCOLINO DA SILVA", "taf": true, "psi": true, "fic": true, "em": true, "id": 86 },
   { "matricula": "0213720", "nome": "RAVELT SOUZA CHAGAS", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 87 },

@@ -65,7 +65,7 @@ const candidatosAmpla = [
   { "matricula": "0222243", "nome": "FLAVIO MANOEL CAVALCANTE SILVA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 63 },
   { "matricula": "0213287", "nome": "PEDRO DE ARAÚJO SILVA", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 64 },
   { "matricula": "0227578", "nome": "JOSIMARIO FERREIRA DO NASCIMENTO", "taf": false, "psi": false, "fic": "aguardando", "em": "aguardando", "id": 65 },
-  { "matricula": "0230612", "nome": "RAFAEL GOMES DE SOUZA", "taf": true, "psi": true, "fic": "aguardando", "em": "aguardando", "id": 66 },
+  { "matricula": "0230612", "nome": "RAFAEL GOMES DE SOUZA", "taf": true, "psi": true, "fic": "aguardando", "em": false, "id": 66 },
   { "matricula": "0233067", "nome": "LEANDRO FLAVIO GOMES DE MELO", "taf": true, "psi": true, "fic": true, "em": true, "id": 67 },
   { "matricula": "0231960", "nome": "GABRIEL DE LIMA MACHADO", "taf": true, "psi": true, "fic": true, "em": true, "id": 68 },
   { "matricula": "0227677", "nome": "ANTONIO CÉSAR MARQUES DE CARVALHO", "taf": "aguardando", "psi": "aguardando", "fic": "aguardando", "em": "aguardando", "id": 69 },

@@ -30,23 +30,31 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
     else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
     }
+    // para os que informaram apenas tres;
+    else if (c.taf === true && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
     // para os que informaram apenas dois;
     else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // se aguardando resultado taf
+    // para os que informaram apenas um;
+    else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
+    // inapto no taf
     else if (c.taf === false && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // se aguardando resultado psi
+    // inapto no psi
     else if (c.taf === true && c.psi === false && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // se aguardando resultado fic
+    // inapto na fic
     else if (c.taf === true && c.psi === true && c.fic === false && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // se aguardando resultado med
+    // inapto nos exames medicos
     else if (c.taf === true && c.psi === true && c.fic === true && c.em === false) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }

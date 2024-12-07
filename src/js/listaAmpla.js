@@ -590,7 +590,7 @@ const candidatosAmpla = [
     "nome": "RAFAEL GOMES DE SOUZA", 
     "taf": true, 
     "psi": true, 
-    "fic": "aguardando", 
+    "fic": true, 
     "em": false, 
     "id": 66 
   },

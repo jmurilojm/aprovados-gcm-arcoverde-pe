@@ -57,7 +57,7 @@ function exibirLista(lista, idLista) {
       // verificar se o candidato esta sendo da lista dos desistentes;
       // se for, ele sera encaminhado para a lista ux com o nome de sua lista;
       if (lista === candidatosDesistentes) {
-        document.querySelector(idLista).innerHTML += `<tr>
+        document.querySelector(idLista).innerHTML += `<tr class='desistente'>
                 <td class="center">${i+1}º</td>
                 <td class="center">${c.matricula}</td>
                 <td class="capitalize center">${c.nome.toLowerCase()}  ‐ ${c.lista}</td>

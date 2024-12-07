@@ -22,39 +22,48 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
   listaDeCandidados.forEach((c, i) => {
     // verificar a situacao do candidado nas fases;
 
-    // para os candidatos apto em tudo;
+    // apto em tudo;
     if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
     }
-    // para os nao temos informacao;
+    // sem informacao;
     else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
     }
-    // para os que informaram apenas tres;
+
+    // apto no taf e aguardando;
     else if (c.taf === true && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // para os que informaram apenas dois;
+    // apto no taf e no psi e aguardando;
     else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // para os que informaram apenas um;
+    // apto no taf, psi, fic e aguardando;
     else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // inapto no taf
+    
+    
+    // inapto no taf e apto no psi
     else if (c.taf === false && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // inapto no psi
+    // inapto no taf e apto no psi
+    else if (c.taf === true && c.psi === false && c.fic === 'aguardando' && c.em === 'aguardando') {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
+
+
+    // inapto so no psi
     else if (c.taf === true && c.psi === false && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // inapto na fic
+    // inapto so na fic
     else if (c.taf === true && c.psi === true && c.fic === false && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
-    // inapto nos exames medicos
+    // inapto so nos exames medicos
     else if (c.taf === true && c.psi === true && c.fic === true && c.em === false) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }

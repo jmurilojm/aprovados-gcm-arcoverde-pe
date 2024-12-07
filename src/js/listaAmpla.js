@@ -454,9 +454,9 @@ const candidatosAmpla = [
     "matricula": "0227904", 
     "nome": "LEANDRO CABRAL JORDÃO", 
     "taf": true, 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 51 
   },
   { 

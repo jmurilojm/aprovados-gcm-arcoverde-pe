@@ -1,3 +1,4 @@
+const convocacao = document.querySelector('#convocados');
 const total = document.querySelector('#total');
 const totalAptos = document.querySelector('#totalAptos');
 const totalSemStatus = document.querySelector('#totalSemStatus');
@@ -25,6 +26,7 @@ exibirLista(candidatosDesistentes, '#listagemDesistentes');
 // resumo das quantidades...;
 const totalCandidatos = candidatosValidadosAmpla.length + candidatosValidadosFeminino.length + candidatosValidadosPCD.length;
 
+convocacao.textContent = totalCandidatos + candidatosDesistentes.length;
 total.textContent = totalCandidatos;
 totalAptos.textContent = informaramAptoEmTudo;
 totalSemStatus.textContent = totalCandidatos - informaramAptoEmTudo;

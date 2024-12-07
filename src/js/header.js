@@ -1,4 +1,4 @@
-const horario = '22:26';
+const horario = '23:02';
 const data = '06/12/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 02.12.2024.pdf'
@@ -6,7 +6,7 @@ const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM
 
 const cabecalho = `<div class="importante">
       <p><em>Página não Oficial!</em></p>
-      <p>Ultima atualização: <span>${horario}</span> horas - <span>${data}</span></p>
+      <p>Última atualização: <span>${horario}</span> horas - <span>${data}</span></p>
     </div>
 
     <img src="${logo}" alt="Logo não oficial da GCM Arcoverde/PE. Arte: José Murilo.">

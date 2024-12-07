@@ -34,16 +34,20 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
     else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
+    // se aguardando resultado taf
+    else if (c.taf === false && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
     // se aguardando resultado psi
-    else if (c.taf === true && c.psi === 'aguardando' && c.fic === true && c.em === true) {
+    else if (c.taf === true && c.psi === false && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
     // se aguardando resultado fic
-    else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === true) {
+    else if (c.taf === true && c.psi === true && c.fic === false && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
     // se aguardando resultado med
-    else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
+    else if (c.taf === true && c.psi === true && c.fic === true && c.em === false) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
     // para os que desistiram nos dois;

@@ -58,7 +58,7 @@ const candidatosPCD = [
     "nome": "JOSÉ LADJANE MENDES E SILVA", 
     "taf": true, 
     "psi": true, 
-    "fic": false, 
+    "fic": true, 
     "em": true, 
     "id": 7 
   },

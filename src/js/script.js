@@ -34,6 +34,18 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
     else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
     }
+    // se aguardando resultado psi
+    else if (c.taf === true && c.psi === 'aguardando' && c.fic === true && c.em === true) {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
+    // se aguardando resultado fic
+    else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === true) {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
+    // se aguardando resultado med
+    else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
+      listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
+    }
     // para os que desistiram nos dois;
     else if (c.taf === false && c.psi === false) {
       candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista });

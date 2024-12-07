@@ -1,9 +1,16 @@
+const total = document.querySelector('#total');
+const totalAptos = document.querySelector('#totalAptos');
+const totalSemStatus = document.querySelector('#totalSemStatus');
+const totalIinaptos = document.querySelector('#totalInaptos');
+
+
 // lista de aptos;
 let candidatosValidadosAmpla = [];
 let candidatosValidadosFeminino = [];
 let candidatosValidadosPCD = [];
 let candidatosDesistentes = [];
 
+let informaramAptoEmTudo = 0;
 
 validarLista(candidatosAmpla, candidatosValidadosAmpla, 'Ampla');
 validarLista(candidatosFeminino, candidatosValidadosFeminino, 'Feminino');
@@ -15,6 +22,14 @@ exibirLista(candidatosValidadosFeminino, '#listagemFeminino');
 exibirLista(candidatosValidadosPCD, '#listagemPCD');
 exibirLista(candidatosDesistentes, '#listagemDesistentes');
 
+// resumo das quantidades...;
+const totalCandidatos = candidatosValidadosAmpla.length + candidatosValidadosFeminino.length + candidatosValidadosPCD.length;
+
+total.textContent = totalCandidatos;
+totalAptos.textContent = informaramAptoEmTudo;
+totalSemStatus.textContent = totalCandidatos - informaramAptoEmTudo;
+totalIinaptos.textContent = candidatosDesistentes.length;
+
 
 // funcoes;
 
@@ -25,6 +40,8 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
     // apto em tudo;
     if (c.taf === true && c.psi === true && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1 })
+      // contador de aptos
+      informaramAptoEmTudo++;
     }
     // sem informacao;
     else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {

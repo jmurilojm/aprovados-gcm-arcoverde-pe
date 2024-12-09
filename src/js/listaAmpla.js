@@ -366,7 +366,7 @@ const candidatosAmpla = [
     "taf": true, 
     "psi": true, 
     "fic": true, 
-    "em": false, 
+    "em": true, 
     "id": 41 
   },
   { 
@@ -615,10 +615,10 @@ const candidatosAmpla = [
   { 
     "matricula": "0227677", 
     "nome": "ANTONIO CÉSAR MARQUES DE CARVALHO", 
-    "taf": "aguardando", 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 69 
   },
   { 

@@ -1,4 +1,4 @@
-const horario = '17:49';
+const horario = '19:24';
 const data = '10/12/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 10.12.2024.pdf'
@@ -13,7 +13,7 @@ const cabecalho = `<div class="importante">
     <img src="${logo}" alt="Logo não oficial da GCM Arcoverde/PE. Arte: José Murilo.">
     <h1>GCM Arcoverde - PE</h1>
     <h2>APROVADOS/2024</h2>
-    <h6><em>*Fases, pós Prova Objetiva, ainda em andamento.</em></h6>`;
+    <h6><em>*Lançada a Lista de Convocação para o Curso de Formação.</em></h6>`;
 
 const arquivos = `<strong><p>Arquivos para Download</p></strong>
 <a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a><a href="${listaCF}" download=""><button>Lista para Curso de Formação - 10/12/2024</button></a>`

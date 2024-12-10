@@ -22,7 +22,7 @@ const candidatosPCD = [
     "nome": "FRANCIMARIO GONÇALVES DA SILVA", 
     "taf": true, 
     "psi": true, 
-    "fic": false, 
+    "fic": true, 
     "em": true, 
     "id": 3 
   },
@@ -31,15 +31,15 @@ const candidatosPCD = [
     "nome": "IAGO DE FARIAS ARAUJO", 
     "taf": true, 
     "psi": true, 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "fic": true, 
+    "em": true, 
     "id": 4 
   },
   { 
     "matricula": "0222152", 
     "nome": "PABLO MASCENA ALENCAR", 
     "taf": true, 
-    "psi": false, 
+    "psi": true, 
     "fic": true, 
     "em": true, 
     "id": 5 
@@ -65,7 +65,7 @@ const candidatosPCD = [
   { 
     "matricula": "0223935", 
     "nome": "PAULO RICARDO VALOES MIRANDA", 
-    "taf": true, 
+    "taf": false, 
     "psi": false, 
     "fic": "aguardando", 
     "em": "aguardando", 
@@ -74,20 +74,22 @@ const candidatosPCD = [
   { 
     "matricula": "0235803", 
     "nome": "ISRAEL MARTINS SOUZA GOMES", 
-    "taf": true, 
-    "psi": true, 
-    "fic": true, 
-    "em": false, 
+    "taf": false, 
+    "psi": false, 
+    "fic": 'aguardando', 
+    "em": 'aguardando', 
     "id": 9 
+    // t t t f
   },
   { 
     "matricula": "0228563", 
     "nome": "ROMERIO ARAUJO GOMES", 
-    "taf": "aguardando", 
-    "psi": "aguardando", 
+    "taf": false, 
+    "psi": false, 
     "fic": "aguardando", 
     "em": "aguardando", 
     "id": 10 
+    // a a a a
   },
   { 
     "matricula": "0226175", 
@@ -164,10 +166,10 @@ const candidatosPCD = [
   { 
     "matricula": "0219096", 
     "nome": "JEFERSON GOMES FERREIRA", 
-    "taf": "aguardando", 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 19 
   },
   { 
@@ -175,8 +177,8 @@ const candidatosPCD = [
     "nome": "JANIEL DE ANDRADE BEZERRA", 
     "taf": true, 
     "psi": true, 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "fic": true, 
+    "em": true, 
     "id": 20 
   }];
   

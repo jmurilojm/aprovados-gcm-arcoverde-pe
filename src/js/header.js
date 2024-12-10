@@ -2,6 +2,7 @@ const horario = '13:07';
 const data = '10/12/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 10.12.2024.pdf'
+const listaCF = 'src/midia/Lista de Convocados para o Curso de Formação.pdf'
 
 
 const cabecalho = `<div class="importante">
@@ -15,7 +16,7 @@ const cabecalho = `<div class="importante">
     <h6><em>*Fases, pós Prova Objetiva, ainda em andamento.</em></h6>`;
 
 const arquivos = `<strong><p>Arquivos para Download</p></strong>
-<a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a>`
+<a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a><a href="${listaCF}" download=""><button>Lista para Curso de Formação - 10/12/2024</button></a>`
 
 
 

@@ -27,9 +27,9 @@ exibirLista(candidatosDesistentes, '#listagemDesistentes');
 const totalCandidatos = candidatosValidadosAmpla.length + candidatosValidadosFeminino.length + candidatosValidadosPCD.length;
 
 convocacao.textContent = totalCandidatos + candidatosDesistentes.length;
-total.textContent = totalCandidatos;
+//total.textContent = totalCandidatos;
 totalAptos.textContent = informaramAptoEmTudo;
-totalSemStatus.textContent = totalCandidatos - informaramAptoEmTudo;
+//totalSemStatus.textContent = totalCandidatos - informaramAptoEmTudo;
 totalIinaptos.textContent = candidatosDesistentes.length;
 
 
@@ -46,48 +46,48 @@ function validarLista(listaDeCandidados, listaParaSalvarCandidatosValidados, nom
       informaramAptoEmTudo++;
     }
     // sem informacao;
-    else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    /*else if (c.taf === 'aguardando' && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' })
-    }
+    }*/
 
     // apto no taf e aguardando;
-    else if (c.taf === true && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
+    /*else if (c.taf === true && c.psi === 'aguardando' && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // apto no taf e no psi e aguardando;
-    else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    /*else if (c.taf === true && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // apto no taf, psi, fic e aguardando;
-    else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
+    /*else if (c.taf === true && c.psi === true && c.fic === true && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     
     
     // inapto no taf e apto no psi
-    else if (c.taf === false && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
+    /*else if (c.taf === false && c.psi === true && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // inapto no taf e apto no psi
-    else if (c.taf === true && c.psi === false && c.fic === 'aguardando' && c.em === 'aguardando') {
+    /*else if (c.taf === true && c.psi === false && c.fic === 'aguardando' && c.em === 'aguardando') {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
 
 
     // inapto so no psi
-    else if (c.taf === true && c.psi === false && c.fic === true && c.em === true) {
+    /*else if (c.taf === true && c.psi === false && c.fic === true && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // inapto so na fic
-    else if (c.taf === true && c.psi === true && c.fic === false && c.em === true) {
+    /*else if (c.taf === true && c.psi === true && c.fic === false && c.em === true) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // inapto so nos exames medicos
-    else if (c.taf === true && c.psi === true && c.fic === true && c.em === false) {
+    /*else if (c.taf === true && c.psi === true && c.fic === true && c.em === false) {
       listaParaSalvarCandidatosValidados.push({ "matricula": "-------", "nome": '--------------------', "classificacao": '-' });
-    }
+    }*/
     // para os que desistiram nos dois;
-    else if (c.taf === false && c.psi === false) {
+    else{
       candidatosDesistentes.push({ "matricula": c.matricula, "nome": c.nome, "classificacao": i + 1, lista: nomeLista });
     }
   });

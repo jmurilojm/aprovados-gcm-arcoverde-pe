@@ -23,7 +23,7 @@ const candidatosFeminino = [
     "nome": "BEATRIZ MAURÍCIO TORRES MACEDO", 
     "taf": true, 
     "psi": true, 
-    "fic": false, 
+    "fic": true, 
     "em": true, 
     "id": 3 
   },
@@ -129,10 +129,10 @@ const candidatosFeminino = [
   { 
     "matricula": "231736", 
     "nome": "JOSELAINE MARIA DOS SANTOS SILVA", 
-    "taf": "aguardando", 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 15 
   },
   { 

@@ -1,7 +1,7 @@
-const horario = '18:37';
-const data = '09/12/2024';
+const horario = '13:07';
+const data = '10/12/2024';
 const logo = 'src/imagens/logo.png';
-const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 02.12.2024.pdf'
+const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 10.12.2024.pdf'
 
 
 const cabecalho = `<div class="importante">
@@ -15,7 +15,7 @@ const cabecalho = `<div class="importante">
     <h6><em>*Fases, pós Prova Objetiva, ainda em andamento.</em></h6>`;
 
 const arquivos = `<strong><p>Arquivos para Download</p></strong>
-<a href="${editalAtualizado}" download=""><button>Edital Atualizado - 02/12/2024</button></a>`
+<a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a>`
 
 
 

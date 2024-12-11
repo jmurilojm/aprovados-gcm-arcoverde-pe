@@ -6,7 +6,7 @@ const listaCF = 'src/midia/Lista de Convocados para o Curso de Formação.pdf'
 
 
 const cabecalho = `<div class="importante">
-      <p><em>Página não Oficial!</em></p>
+      <p><em>Página e Logo não Oficiais!<br>Arte: José Murilo - 073...-44.</em></p>
       <p>Última atualização: <span>${horario}</span> horas - <span>${data}</span></p>
     </div>
 

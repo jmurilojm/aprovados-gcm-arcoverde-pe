@@ -148,13 +148,13 @@ footer a {
 .lFeminino tr:nth-child(7) td {
   background: lightyellow;
 }
-.lPCD tr:nth-child(1) td {
+/*.lPCD tr:nth-child(1) td {
   background: lightgrey;
-}
-.lPCD tr:nth-child(n+2):nth-child(-n+3) td {
+}*/
+.lPCD tr:nth-child(n+1):nth-child(-n+2) td {
   background: lightcyan;
 }
-.lPCD tr:nth-child(4) td {
+.lPCD tr:nth-child(3) td {
   background: lightyellow;
 }
 

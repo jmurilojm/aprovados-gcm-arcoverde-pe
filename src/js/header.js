@@ -18,7 +18,7 @@ const cabecalho = `<div class="importante">
 
 const arquivos = `<strong><p>Arquivos para Download</p></strong>
 <a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a>
-<a href="${listaCF}" download=""><button>Lista para Curso de Formação - 11/12/2024<br>(ordem alfabética)</button></a>
+<a href="${listaCF}" download=""><button>Lista para o Curso de Formação - 11/12/2024<br>(ordem alfabética)</button></a>
 <a href="${listaCFComClassificacao}" download=""><button>Classificação pós Etapas - 11/12/2024<br>(ordem por nota)</button></a>`
 
 

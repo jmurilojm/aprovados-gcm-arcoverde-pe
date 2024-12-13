@@ -133,6 +133,30 @@ footer a {
   color: white;
   font-size: 20px;
 }*/
+.lAmpla tr:nth-child(-n+26) td{
+  background: lightcyan;
+}
+.lAmpla tr:nth-child(n+27):nth-child(-n+44) td {
+  background: lightyellow;
+}
+.lFeminino tr:nth-child(n+1):nth-child(-n+4) td {
+  background: lightgrey;
+}
+.lFeminino tr:nth-child(n+5):nth-child(-n+6) td {
+  background: lightcyan;
+}
+.lFeminino tr:nth-child(7) td {
+  background: lightyellow;
+}
+.lPCD tr:nth-child(1) td {
+  background: lightgrey;
+}
+.lPCD tr:nth-child(n+2):nth-child(-n+3) td {
+  background: lightcyan;
+}
+.lPCD tr:nth-child(4) td {
+  background: lightyellow;
+}
 
 @media screen and (min-width: 720px) {
 

@@ -1,5 +1,5 @@
-const horario = '10:54';
-const data = '11/12/2024';
+const horario = '10:06';
+const data = '13/12/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 10.12.2024.pdf'
 const listaCF = 'src/midia/Lista-convocacao-cf-11.12.2024.pdf'

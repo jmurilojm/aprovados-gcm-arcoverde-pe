@@ -3,7 +3,7 @@ const data = '11/12/2024';
 const logo = 'src/imagens/logo.png';
 const editalAtualizado = 'src/midia/EDITAL - GUARDA DE ARCOVERDE - ATUALIZADO EM 10.12.2024.pdf'
 const listaCF = 'src/midia/Lista-convocacao-cf-11.12.2024.pdf'
-const listaCFComClassificacao = 'src/midia/Lista-pos-etapas-e-classificacao-11.12.2024.pdf'
+const listaCFComClassificacao = 'src/midia/Lista-pos-etapas-e-classificacao-por-nota-11.12.2024.pdf'
 
 
 const cabecalho = `<div class="importante">
@@ -18,8 +18,8 @@ const cabecalho = `<div class="importante">
 
 const arquivos = `<strong><p>Arquivos para Download</p></strong>
 <a href="${editalAtualizado}" download=""><button>Edital Atualizado - 10/12/2024</button></a>
-<a href="${listaCF}" download=""><button>Lista para Curso de Formação - 11/12/2024</button></a>
-<a href="${listaCFComClassificacao}" download=""><button>Classificação pós Etapas - 11/12/2024</button></a>`
+<a href="${listaCF}" download=""><button>Lista para Curso de Formação - 11/12/2024<br>(ordem alfabética)</button></a>
+<a href="${listaCFComClassificacao}" download=""><button>Classificação pós Etapas - 11/12/2024<br>(ordem por nota)</button></a>`
 
 
 

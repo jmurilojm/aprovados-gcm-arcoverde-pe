@@ -17,6 +17,15 @@ Não compareceu ao CF e por isso ficará "false" na opção "taf" para que seja 
     "em": "aguardando", 
     "id": 38 
 Será  atualizado todos os requisitos para true e fez o CF
+
+"matricula": "0233683", 
+    "nome": "IVALDO IGOR DA SILVA CRUZ", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
+    "id": 83 
+Será atualizado o item "taf" para "false" para que seja retirado da lista por não ter comparecido ao CF.
 */
 
 
@@ -358,10 +367,10 @@ const candidatosAmpla = [
   { 
     "matricula": "0228481", 
     "nome": "GUSTAVO VINICIUS LOPES ANDRADE", 
-    "taf": "true", 
-    "psi": "true", 
-    "fic": "true", 
-    "em": "true", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
     "id": 38 
   },
   { 
@@ -763,7 +772,7 @@ const candidatosAmpla = [
   { 
     "matricula": "0233683", 
     "nome": "IVALDO IGOR DA SILVA CRUZ", 
-    "taf": true, 
+    "taf": false, 
     "psi": true, 
     "fic": true, 
     "em": true, 

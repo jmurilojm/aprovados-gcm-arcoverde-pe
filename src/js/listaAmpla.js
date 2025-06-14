@@ -1,3 +1,25 @@
+/*
+"matricula": "0222435", 
+    "nome": "RENATO SIQUEIRA DA SILVA", 
+    "taf": true, 
+    "psi": true, 
+    "fic": true, 
+    "em": true, 
+    "id": 17 
+Não compareceu ao CF e por isso ficará "false" na opção "taf" para que seja retirado da lista.
+
+
+"matricula": "0228481", 
+    "nome": "GUSTAVO VINICIUS LOPES ANDRADE", 
+    "taf": "aguardando", 
+    "psi": "aguardando", 
+    "fic": "aguardando", 
+    "em": "aguardando", 
+    "id": 38 
+Será  atualizado todos os requisitos para true e fez o CF
+*/
+
+
 // lista ampla
 const candidatosAmpla = [
   { 
@@ -147,7 +169,7 @@ const candidatosAmpla = [
   { 
     "matricula": "0222435", 
     "nome": "RENATO SIQUEIRA DA SILVA", 
-    "taf": true, 
+    "taf": false, 
     "psi": true, 
     "fic": true, 
     "em": true, 
@@ -336,10 +358,10 @@ const candidatosAmpla = [
   { 
     "matricula": "0228481", 
     "nome": "GUSTAVO VINICIUS LOPES ANDRADE", 
-    "taf": "aguardando", 
-    "psi": "aguardando", 
-    "fic": "aguardando", 
-    "em": "aguardando", 
+    "taf": "true", 
+    "psi": "true", 
+    "fic": "true", 
+    "em": "true", 
     "id": 38 
   },
   { 
